@@ -1,3 +1,7 @@
+/* -----------------------------
+   GLOBAL PAGE STYLING
+------------------------------ */
+
 body {
   font-family: "Garamond", Georgia, serif;
   margin: 3rem auto;
@@ -7,12 +11,14 @@ body {
   line-height: 1.7;
 }
 
+/* Main page headers */
 h1 {
   font-family: "IM Fell English", "Times New Roman", serif;
   font-size: 2.6rem;
   text-align: center;
   letter-spacing: 2px;
   font-variant: small-caps;
+  margin-bottom: 0.3rem;
 }
 
 h1::before,
@@ -24,4 +30,130 @@ h1::after {
   margin: 0.5rem 0;
 }
 
-/* etc… (all your other rules) */
+/* Navigation links */
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.1rem;
+  color: #3a332d;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   REGISTER PAGE STYLING
+------------------------------ */
+
+.surname {
+  font-family: "IM Fell English", serif;
+  font-variant: small-caps;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 2.5rem;
+}
+
+.surname::after {
+  content: "✠";
+  display: block;
+  text-align: center;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  color: #5c5248;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem 0;
+  text-align: center;
+}
+
+ul li {
+  margin: 0.3rem 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #3a332d;
+  font-variant: small-caps;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   PROFILE PAGE STYLING
+------------------------------ */
+
+.backlink {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.backlink a {
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1rem;
+  color: #3a332d;
+}
+
+.backlink a:hover {
+  text-decoration: underline;
+}
+
+.profile {
+  background: #f8f4ee;
+  border: 1px solid #d8d2c6;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  box-shadow: 0 0 6px rgba(0,0,0,0.06);
+}
+
+.profile .name {
+  font-family: "IM Fell English", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.profile .details p {
+  margin: 0.4rem 0;
+}
+
+.profile .details strong {
+  font-family: "IM Fell English", serif;
+  font-variant: small-caps;
+}
+
+.profile .details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0 0.8rem 0;
+}
+
+.profile .details ul li {
+  margin: 0.2rem 0;
+}
+
+.profile .details ul li a {
+  text-decoration: none;
+  color: #3a332d;
+  font-variant: small-caps;
+}
+
+.profile .details ul li a:hover {
+  text-decoration: underline;
+}
