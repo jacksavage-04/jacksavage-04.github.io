@@ -4,27 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Almanach de Savage</title>
+
   <style>
-    body { font-family: Georgia, serif; margin: 2rem auto; max-width: 800px; line-height: 1.6; }
-    h1, h2, h3 { font-family: "Times New Roman", serif; }
-    nav { margin-bottom: 2rem; }
-    nav a { margin-right: 1rem; }
-    .section { margin-top: 3rem; }
-    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-    td, th { border: 1px solid #ccc; padding: 0.5rem; }
-      body { font-family: Georgia, serif; margin: 2rem auto; max-width: 800px; line-height: 1.6; }
-    h1 { font-family: "Times New Roman", serif; font-size: 2.4rem; letter-spacing: 1px; text-align: center; margin-bottom: 0.5rem; }
-    h1::after { content: "❦"; display: block; font-size: 1.6rem; margin-top: 0.3rem; }
-    h2 { margin-top: 3rem; font-variant: small-caps; letter-spacing: 1px; text-align: center; }
-    nav { margin-bottom: 2rem; text-align: center; }
-    nav a { margin: 0 0.7rem; text-decoration: none; font-variant: small-caps; }
-    .section { margin-top: 3rem; border-top: 1px solid #bbb; padding-top: 2rem; }
-    pre { white-space: pre-wrap; word-wrap: break-word; background: #fdfcf8; border: 1px solid #e0dcd2; padding: 1rem; border-radius: 6px; box-shadow: 0 0 4px rgba(0,0,0,0.05); }
-    .ornament { text-align: center; font-size: 1.4rem; margin: 2rem 0; color: #666; }
+    /* Page Layout */
+    body {
+      font-family: "Garamond", Georgia, serif;
+      margin: 3rem auto;
+      max-width: 760px;
+      background: #fdfbf7;
+      color: #2a2520;
+      line-height: 1.7;
+    }
+
+    /* Title with medieval ornaments */
+    h1 {
+      font-family: "IM Fell English", "Times New Roman", serif;
+      font-size: 3rem;
+      text-align: center;
+      font-variant: small-caps;
+      letter-spacing: 2px;
+      margin-bottom: 0.3rem;
+    }
+
+    h1::before {
+      content: "✠ ✷ ✠";
+      display: block;
+      font-size: 1.5rem;
+      color: #5c5248;
+      margin-bottom: 0.4rem;
+    }
+
+    h1::after {
+      content: "✠ ✷ ✠";
+      display: block;
+      font-size: 1.5rem;
+      color: #5c5248;
+      margin-top: 0.4rem;
+    }
+
+    /* Subtitle */
+    p em {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    /* Navigation */
+    nav {
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 0.8rem;
+      text-decoration: none;
+      font-variant: small-caps;
+      font-size: 1.1rem;
+      color: #3a332d;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
+
 </head>
 <body>
+
   <h1>Almanach de Savage</h1>
+
   <p><em>Containing the Genealogies, Residences and Notes of the Family of Savage and Its Kindred Houses</em></p>
 
   <nav>
@@ -32,5 +81,6 @@
     <a href="#calendar">Calendar</a>
     <a href="#genealogies">Genealogies</a>
   </nav>
+
 </body>
 </html>
