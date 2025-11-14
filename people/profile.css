@@ -1,0 +1,109 @@
+/* -----------------------------
+   PROFILE PAGE STYLING
+------------------------------ */
+
+body {
+  font-family: "Garamond", Georgia, serif;
+  margin: 3rem auto;
+  max-width: 760px;
+  background: #fdfbf7;
+  color: #2a2520;
+  line-height: 1.7;
+}
+
+/* Top title */
+h1 {
+  font-family: "IM Fell English", "Times New Roman", serif;
+  font-size: 2.4rem;
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+
+h1::before,
+h1::after {
+  content: "✠ ✷ ✠";
+  display: block;
+  font-size: 1.2rem;
+  color: #5c5248;
+  margin: 0.5rem 0;
+}
+
+/* Main profile block */
+.profile {
+  background: #f8f4ee;
+  border: 1px solid #d8d2c6;
+  padding: 1.5rem 1.8rem;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  margin-top: 2rem;
+}
+
+/* Name header */
+.profile .name {
+  font-family: "IM Fell English", serif;
+  font-size: 1.8rem;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.profile .name::after {
+  content: "✠";
+  display: block;
+  font-size: 1.3rem;
+  color: #776b5c;
+  margin-top: 0.4rem;
+}
+
+/* Detail layout */
+.details p {
+  margin: 0.4rem 0;
+}
+
+.details strong {
+  font-family: "IM Fell English", serif;
+  font-variant: small-caps;
+}
+
+/* Lists for children, siblings, etc. */
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0 0.8rem 0;
+}
+
+.details ul li {
+  margin: 0.2rem 0;
+}
+
+.details ul li a {
+  text-decoration: none;
+  color: #3a332d;
+  font-variant: small-caps;
+}
+
+.details ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation back links */
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.1rem;
+  color: #3a332d;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
