@@ -156,6 +156,30 @@ ul li a:hover { text-decoration: underline; }
   margin-bottom: 1rem;
 }
 
+/* Profile detail typography */
+.details p {
+  margin: 0.3rem 0;
+}
+
+.details strong {
+  font-family: "IM Fell English", serif;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+
+.details a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
+
+.profile .bio {
+  margin-top: 1.2rem;
+}
+
 @media (max-width: 640px) {
   body {
     margin: 0;
