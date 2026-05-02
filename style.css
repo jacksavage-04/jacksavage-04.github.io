@@ -1,201 +1,197 @@
-/* ---------------------------------------
-   GLOBAL MEDIEVAL LOOK
------------------------------------------ */
+:root {
+  --ink: #2b241d;
+  --ink-muted: #4b3f34;
+  --accent: #7b6149;
+  --paper: #f7f0e2;
+  --paper-deep: #efe5d0;
+  --border: #72614d;
+  --panel: rgba(255, 255, 255, 0.64);
+}
+
+* { box-sizing: border-box; }
 
 body {
   font-family: "Garamond", Georgia, serif;
-  margin: 3rem auto;
-  max-width: 860px;
-  background: #f8f3e8;
-  color: #2a2520;
-  line-height: 1.75;
+  margin: 2rem auto;
+  max-width: 980px;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
   padding: 2rem;
-  border: 3px solid #5c5248;
-  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  border: 3px solid var(--border);
+  box-shadow: 0 0 30px rgba(0,0,0,0.22);
   background-image: url("https://www.transparenttextures.com/patterns/aged-paper.png");
 }
 
-/* ---------------------------------------
-   TITLE (ALL PAGES)
------------------------------------------ */
+.hero { text-align: center; margin-bottom: 2rem; }
+.kicker {
+  margin: 0;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.9rem;
+}
 
 h1 {
   font-family: "IM Fell English", serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3.4rem);
   text-align: center;
   font-variant: small-caps;
-  letter-spacing: 3px;
-  margin-bottom: 0.3rem;
+  letter-spacing: 2px;
+  margin: 0.4rem 0;
   color: #3e352c;
-  text-shadow: 1px 1px 0px #d9d0c4;
 }
 
-h1::before {
-  content: "✠ ✠ ✠";
-  display: block;
-  font-size: 1.4rem;
-  margin-bottom: 0.4rem;
-  color: #6a5f53;
-}
-
+h1::before,
 h1::after {
   content: "✠ ✠ ✠";
   display: block;
-  font-size: 1.4rem;
-  margin-top: 0.4rem;
+  font-size: 1.2rem;
   color: #6a5f53;
 }
 
-/* ---------------------------------------
-   NAVIGATION
------------------------------------------ */
+.subtitle {
+  max-width: 70ch;
+  margin: 0.7rem auto 0;
+  color: var(--ink-muted);
+}
 
 nav {
   text-align: center;
-  margin: 2.5rem 0;
+  margin: 1.8rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
 nav a {
-  margin: 0 1rem;
   text-decoration: none;
   font-variant: small-caps;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  padding: 0.45rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  border-color: var(--accent);
+  background: rgba(123, 97, 73, 0.1);
+}
+
+h2, h3 {
+  font-family: "IM Fell English", serif;
+  color: #3c3329;
+  font-variant: small-caps;
   letter-spacing: 1px;
-  color: #392f27;
-  padding: 0.3rem 0.5rem;
-  border-bottom: 1px dotted #392f27;
+  margin-top: 0;
 }
 
-nav a:hover {
-  color: #8a755c;
-  border-bottom: 1px solid #8a755c;
+.panel {
+  background: var(--panel);
+  border: 1px solid #d8c8ae;
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* ---------------------------------------
-   SURNAME HEADINGS (REGISTER)
------------------------------------------ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+}
+
+.button-link:hover { filter: brightness(1.05); }
 
 .surname {
   font-family: "IM Fell English", serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-variant: small-caps;
   text-align: center;
-  margin-top: 3rem;
-  position: relative;
-  letter-spacing: 2px;
-  color: #3f362d;
+  margin-top: 2.2rem;
+  letter-spacing: 1px;
 }
-
-.surname::after {
-  content: "✠";
-  font-size: 1.4rem;
-  display: block;
-  margin-top: 0.4rem;
-  color: #705f50;
-}
-
-/* ---------------------------------------
-   REGISTER NAME LIST
------------------------------------------ */
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 2rem 0;
+  margin: 0.6rem 0 1.5rem;
   text-align: center;
-}
-
-ul li {
-  margin: 0.4rem 0;
 }
 
 ul li a {
   text-decoration: none;
-  font-size: 1.2rem;
-  font-variant: small-caps;
-  color: #3a332d;
-  letter-spacing: 1px;
-}
-
-ul li a:hover {
-  color: #7d6852;
-  text-decoration: underline;
-}
-
-/* ---------------------------------------
-   PROFILE PAGES
------------------------------------------ */
-
-.backlink {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.backlink a {
-  text-decoration: none;
-  font-variant: small-caps;
   font-size: 1.1rem;
+  font-variant: small-caps;
   color: #3a332d;
 }
 
-.backlink a:hover {
-  text-decoration: underline;
-}
+ul li a:hover { text-decoration: underline; }
 
 .profile {
-  background: rgba(255,255,255,0.75);
-  border: 2px solid #c2b6a4;
-  padding: 2rem;
+  background: var(--panel);
+  border: 1px solid #d8c8ae;
+  padding: 1.6rem;
   border-radius: 8px;
-  margin: 2rem 0;
-  box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 .profile .name {
   font-family: "IM Fell English", serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-align: center;
-  font-variant: small-caps;
-  letter-spacing: 2px;
   margin-bottom: 1rem;
-  color: #3b312a;
 }
 
-.profile .name::after {
-  content: "✠";
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 1.4rem;
-  color: #6b5a4a;
-}
-
+/* Profile detail typography */
 .details p {
-  margin: 0.4rem 0;
-  font-size: 1.1rem;
+  margin: 0.3rem 0;
 }
 
 .details strong {
   font-family: "IM Fell English", serif;
   font-variant: small-caps;
-  letter-spacing: 1px;
+  letter-spacing: 0.03em;
 }
 
-.details ul {
-  list-style: none;
-  padding: 0;
-  margin: 0.4rem 0 1.2rem 0;
-}
-
-.details ul li {
-  margin: 0.2rem 0;
-}
-
-.details ul li a {
+.details a {
+  color: var(--ink);
   text-decoration: none;
-  color: #483c31;
-  font-variant: small-caps;
 }
 
-.details ul li a:hover {
+.details a:hover {
   text-decoration: underline;
+}
+
+.profile .bio {
+  margin-top: 1.2rem;
+}
+
+
+.age {
+  color: var(--ink-muted);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 1.25rem;
+  }
 }
