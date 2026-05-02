@@ -1,0 +1,62 @@
+[
+  {
+    "id": "john_savage_1823",
+    "name": "John Savage",
+    "birth_date": "1823-04-12",
+    "death_date": "1891-09-03",
+    "parents": ["william_savage_1790", "mary_clarke_1795"],
+    "spouse": ["elizabeth_hart_1828"],
+    "children": ["thomas_savage_1850"],
+    "occupation": "Merchant",
+    "notes": "Owned shipping interests",
+    "bio": "English merchant based in Portsmouth."
+  },
+  {
+    "id": "william_savage_1790",
+    "name": "William Savage",
+    "birth_date": "1790-02-03",
+    "death_date": "1860-11-22",
+    "parents": [],
+    "spouse": ["mary_clarke_1795"],
+    "children": ["john_savage_1823"],
+    "occupation": "Shipwright",
+    "notes": "",
+    "bio": "Worked in coastal shipyards."
+  },
+  {
+    "id": "mary_clarke_1795",
+    "name": "Mary Clarke",
+    "birth_date": "1795-07-19",
+    "death_date": "1872-01-14",
+    "parents": [],
+    "spouse": ["william_savage_1790"],
+    "children": ["john_savage_1823"],
+    "occupation": "",
+    "notes": "",
+    "bio": "Maintained household records and accounts."
+  },
+  {
+    "id": "elizabeth_hart_1828",
+    "name": "Elizabeth Hart",
+    "birth_date": "1828-05-30",
+    "death_date": "1902-03-01",
+    "parents": [],
+    "spouse": ["john_savage_1823"],
+    "children": ["thomas_savage_1850"],
+    "occupation": "",
+    "notes": "",
+    "bio": ""
+  },
+  {
+    "id": "thomas_savage_1850",
+    "name": "Thomas Savage",
+    "birth_date": "1850-10-08",
+    "death_date": "1916-06-10",
+    "parents": ["john_savage_1823", "elizabeth_hart_1828"],
+    "spouse": [],
+    "children": [],
+    "occupation": "Clerk",
+    "notes": "",
+    "bio": ""
+  }
+]
