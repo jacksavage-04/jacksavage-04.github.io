@@ -1,3 +1,70 @@
+:root {
+  --paper: #f7f1e4;
+  --ink: #2b2118;
+  --accent: #6a2d1a;
+  --gold: #a57c3c;
+  --panel: #fffaf0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(165, 124, 60, 0.15), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(106, 45, 26, 0.12), transparent 38%),
+    var(--paper);
+}
+
+.hero {
+  border-bottom: 3px double var(--gold);
+  background: linear-gradient(rgba(43, 33, 24, 0.9), rgba(43, 33, 24, 0.75));
+  color: #f8ebcf;
+  padding: 2.5rem 1rem;
+}
+
+.hero-small { padding: 1.75rem 1rem; }
+.hero-inner { max-width: 900px; margin: 0 auto; }
+.kicker { text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.75rem; margin: 0; color: #d9bb7b; }
+h1 { margin: 0.35rem 0; font-size: 2.3rem; }
+.subtitle { margin: 0; font-size: 1.1rem; opacity: 0.9; }
+
+.container { max-width: 900px; margin: 2rem auto 2.5rem; padding: 0 1rem; }
+.card {
+  background: var(--panel);
+  border: 1px solid #d8c7a2;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 24px rgba(60, 41, 17, 0.12);
+}
+
+h2, h3 { color: var(--accent); font-weight: 600; }
+
+.people-list { padding-left: 1.1rem; columns: 2; column-gap: 2rem; }
+.people-list li { margin-bottom: 0.5rem; break-inside: avoid; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted #8b4a2f; }
+a:hover { color: #3a140a; border-bottom-style: solid; }
+
+.meta { color: #594735; font-style: italic; margin-top: -0.25rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.panel {
+  background: #fffdf7;
+  border: 1px solid #ddcda9;
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6d5b46;
+  padding: 1rem;
+  border-top: 1px solid #d8c7a2;
+}
 :root { font-family: Arial, sans-serif; }
 body { margin: 0; background: #f5f5f7; color: #111; }
 .container { max-width: 860px; margin: 2rem auto; background: #fff; padding: 1.5rem; border-radius: 12px; }

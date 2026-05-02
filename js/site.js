@@ -35,6 +35,8 @@ const renderPerson = async () => {
   const person = index.get(id);
 
   if (!person) {
+    root.innerHTML = '<section class="card"><h2>Person not found</h2><p><a href="index.html">Back to register</a></p></section>';
+
     root.innerHTML = '<h1>Person not found</h1><p><a href="index.html">Back</a></p>';
     return;
   }
@@ -42,6 +44,9 @@ const renderPerson = async () => {
   const list = (label, ids) => `<div class="panel"><h3>${label}</h3><ul>${ids.map((x) => `<li>${personLink(x, index)}</li>`).join('') || '<li>Unknown</li>'}</ul></div>`;
 
   root.innerHTML = `
+    <section class="card">
+    <p><a href="index.html">← Return to family register</a></p>
+    <h2>${person.name}</h2>
     <p><a href="index.html">← All people</a></p>
     <h1>${person.name}</h1>
     <p class="meta">${person.birth_date || 'Unknown birth'} – ${person.death_date || 'Unknown death'}</p>
@@ -52,6 +57,7 @@ const renderPerson = async () => {
       ${list('Parents', person.parents || [])}
       ${list('Spouse(s)', person.spouse || [])}
       ${list('Children', person.children || [])}
+    </section>
     </section>
   `;
 };
