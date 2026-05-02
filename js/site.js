@@ -37,6 +37,7 @@ const renderPerson = async () => {
   if (!person) {
     root.innerHTML = '<section class="card"><h2>Person not found</h2><p><a href="index.html">Back to register</a></p></section>';
 
+    root.innerHTML = '<h1>Person not found</h1><p><a href="index.html">Back</a></p>';
     return;
   }
 
@@ -46,6 +47,8 @@ const renderPerson = async () => {
     <section class="card">
     <p><a href="index.html">← Return to family register</a></p>
     <h2>${person.name}</h2>
+    <p><a href="index.html">← All people</a></p>
+    <h1>${person.name}</h1>
     <p class="meta">${person.birth_date || 'Unknown birth'} – ${person.death_date || 'Unknown death'}</p>
     <p>${person.bio || 'No biography yet.'}</p>
     <p><strong>Occupation:</strong> ${person.occupation || 'Unknown'}</p>
